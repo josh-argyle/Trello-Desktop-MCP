@@ -17,7 +17,7 @@ class ApplicationInsights {
         const appInsights = require('applicationinsights');
         appInsights.setup(instrumentationKey).start();
         this.isEnabled = true;
-        console.log('✅ Application Insights initialized');
+        console.error('✅ Application Insights initialized');
       } catch (error) {
         console.warn('Application Insights not available, using no-op implementation');
       }
